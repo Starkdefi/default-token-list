@@ -24,5 +24,5 @@ module.exports = function buildList() {
         return t1.chainId < t2.chainId ? -1 : 1;
       }),
   };
-  return list;
+  return Promise.resolve(list);
 };
