@@ -5,7 +5,7 @@
     "url": "https://starkdefi.com"
   },
   "description": "Default token list for StarkDefi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "build/starkdefi-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
