@@ -1,7 +1,11 @@
 {
   "name": "@starkdefi/default-token-list",
-  "version": "1.0.1",
+  "author": {
+    "name": "StarkDefi Labs",
+    "url": "https://starkdefi.com"
+  },
   "description": "Default token list for StarkDefi",
+  "version": "1.0.1",
   "main": "build/starkdefi-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
@@ -21,7 +25,6 @@
     "list",
     "default"
   ],
-  "author": "Iddriss Raaj",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Starkdefi/default-token-list/issues"
