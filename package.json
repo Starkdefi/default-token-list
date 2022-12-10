@@ -32,7 +32,8 @@
   "homepage": "https://github.com/Starkdefi/default-token-list#readme",
   "devDependencies": {
     "@starkdefi/token-lists": "^1.0.1",
-    "ajv": "^6.12.3",
+    "ajv": "^8.11.2",
+    "ajv-formats": "^2.1.1",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
     "rimraf": "^3.0.2",
