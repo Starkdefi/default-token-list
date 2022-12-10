@@ -3,9 +3,11 @@ const schema = require("@starkdefi/token-lists/src/tokenlist.schema.json");
 const { expect } = require("chai");
 const { validateAndParseAddress } = require("starknet");
 const Ajv = require("ajv");
+const addFormats = require("ajv-formats");
 const buildList = require("../src/buildList");
 
-const ajv = new Ajv({ allErrors: true, format: "full" });
+const ajv = new Ajv({ allErrors: true });
+addFormats(ajv);
 const validator = ajv.compile(schema);
 let defaultTokenList;
 
