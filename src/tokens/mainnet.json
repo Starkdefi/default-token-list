@@ -1,13 +1,5 @@
 [
   {
-    "name": "StarkDefi Coin",
-    "address": "0x0000000000000000000000000000000000000000000000000000000000000007",
-    "symbol": "$SDC",
-    "decimals": 18,
-    "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://www.starkdefi.com/logo192.png"
-  },
-  {
     "name": "Ether",
     "address": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
     "symbol": "ETH",
@@ -17,7 +9,7 @@
   },
   {
     "name": "Dai Stablecoin",
-    "address": "0x001108cdbe5d82737b9057590adaf97d34e74b5452f0628161d237746b6fe69e",
+    "address": "0x00da114221cb83fa859dbdb4c44beeaa0bb37c7537ad5ae66fe5e0efd20e6eb3",
     "symbol": "DAI",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
