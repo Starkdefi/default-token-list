@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Ether",
+    "address": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+    "symbol": "ETH",
+    "decimals": 18,
+    "chainId": "0x534e5f5345504f4c4941",
+    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+  },
+  {
+    "name": "Starknet Token",
+    "address": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+    "symbol": "STRK",
+    "decimals": 18,
+    "chainId": "0x534e5f5345504f4c4941",
+    "logoURI": "https://tokens.starkdefi.com/chain/mainnet/0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d/logo.png"
+  }
+]

@@ -1,6 +1,6 @@
 const { version } = require("../package.json");
 const mainnet = require("./tokens/mainnet.json");
-const goerli = require("./tokens/goerli.json");
+const sepolia = require("./tokens/sepolia.json");
 
 module.exports = function buildList() {
   const parsed = version.split(".");
@@ -15,7 +15,7 @@ module.exports = function buildList() {
     tags: {},
     logoURI: "ipfs://QmYVm6z2TmQYzhG1rV6jHi8nfE9a5HSFAy9vSE1ruBvRZd",
     keywords: ["starkdefi", "default"],
-    tokens: [...mainnet, ...goerli]
+    tokens: [...mainnet, ...sepolia]
       // sort them by symbol for easy readability
       .sort((t1, t2) => {
         if (t1.chainId === t2.chainId) {

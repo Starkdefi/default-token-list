@@ -5,7 +5,7 @@
     "url": "https://starkdefi.com"
   },
   "description": "Default token list for StarkDefi",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "main": "build/starkdefi-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
@@ -31,12 +31,12 @@
   },
   "homepage": "https://github.com/Starkdefi/default-token-list#readme",
   "devDependencies": {
-    "@starkdefi/token-lists": "^1.0.2",
+    "@starkdefi/token-lists": "^1.0.1",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
-    "starknet": "^5.14.1",
+    "starknet": "6.11.0",
     "rimraf": "^5.0.1"
   },
   "publishConfig": {
