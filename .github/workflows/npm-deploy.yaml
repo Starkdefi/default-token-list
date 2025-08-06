@@ -68,14 +68,14 @@ jobs:
       - name: Verify build output
         if: steps.version-check.outputs.version_changed == 'true'
         run: |
-          # Check if dist directory exists and has files
-          if [ ! -d "dist" ]; then
-            echo "Error: dist directory not found"
+          # Check if build directory exists and has files
+          if [ ! -d "build" ]; then
+            echo "Error: build directory not found"
             exit 1
           fi
           
           # Check for required files
-          if [ ! -f "dist/index.js" ] || [ ! -f "dist/index.d.ts" ]; then
+          if [ ! -f "build/starkdefi-default.tokenlist.json" ]; then
             echo "Error: Required build files not found"
             exit 1
           fi
