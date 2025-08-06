@@ -1,10 +1,10 @@
-const packageJson = require("../package.json");
-const schema = require("@starkdefi/token-lists/src/tokenlist.schema.json");
-const { expect } = require("chai");
-const { validateAndParseAddress } = require("starknet");
-const Ajv = require("ajv");
-const addFormats = require("ajv-formats");
-const buildList = require("../src/buildList");
+import packageJson from "../package.json" assert { type: "json" };
+import schema from "@starkdefi/token-lists/dist/tokenlist.schema.json" assert { type: "json" };
+import { expect } from "chai";
+import { validateAndParseAddress } from "starknet";
+import Ajv from "ajv";
+import addFormats from "ajv-formats";
+import buildList from "../src/buildList.js";
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);

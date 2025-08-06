@@ -1,8 +1,9 @@
-const { version } = require("../package.json");
-const mainnet = require("./tokens/mainnet.json");
-const sepolia = require("./tokens/sepolia.json");
+import packageJson from "../package.json" assert { type: "json" };
+import mainnet from "./tokens/mainnet.json" assert { type: "json" };
+import sepolia from "./tokens/sepolia.json" assert { type: "json" };
 
-module.exports = function buildList() {
+export default function buildList() {
+  const { version } = packageJson;
   const parsed = version.split(".");
   const list = {
     name: "StarkDefi Default",
@@ -25,4 +26,4 @@ module.exports = function buildList() {
       }),
   };
   return Promise.resolve(list);
-};
+}
