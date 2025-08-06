@@ -1,8 +1,16 @@
-const { version } = require("../package.json");
-const mainnet = require("./tokens/mainnet.json");
-const sepolia = require("./tokens/sepolia.json");
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-module.exports = function buildList() {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf8'));
+const mainnet = JSON.parse(readFileSync(join(__dirname, './tokens/mainnet.json'), 'utf8'));
+const sepolia = JSON.parse(readFileSync(join(__dirname, './tokens/sepolia.json'), 'utf8'));
+
+export default function buildList() {
+  const { version } = packageJson;
   const parsed = version.split(".");
   const list = {
     name: "StarkDefi Default",
@@ -25,4 +33,4 @@ module.exports = function buildList() {
       }),
   };
   return Promise.resolve(list);
-};
+}

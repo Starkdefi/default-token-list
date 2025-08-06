@@ -1,7 +1,9 @@
 # @Starkdefi/default-token-list
 
-[![Tests](https://github.com/Starkdefi/token-lists/workflows/Tests/badge.svg)](https://github.com/Starkdefi/default-token-list/actions?query=workflow%3ATests)
+[![Tests](https://github.com/Starkdefi/token-lists/workflows/Unit%20Tests/badge.svg)](https://github.com/Starkdefi/default-token-list/actions?query=workflow%3ATests)
+[![NPM Deploy](https://github.com/Starkdefi/default-token-list/workflows/NPM%20Deploy/badge.svg)](https://github.com/Starkdefi/default-token-list/actions?query=workflow%3A%22NPM+Deploy%22)
 [![npm](https://img.shields.io/npm/v/@starkdefi/default-token-list)](https://unpkg.com/@starkdefi/default-token-list@latest/)
+[![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@starkdefi/default-token-list/latest.svg)](https://bundlephobia.com/result?p=@starkdefi/default-token-list@latest)
 
 This NPM module and GitHub repo contains the default token list used in the StarkDefi interface.
 
