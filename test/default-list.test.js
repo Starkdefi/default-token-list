@@ -1,10 +1,17 @@
-import packageJson from "../package.json" assert { type: "json" };
-import schema from "@starkdefi/token-lists/dist/tokenlist.schema.json" assert { type: "json" };
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import { expect } from "chai";
 import { validateAndParseAddress } from "starknet";
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
 import buildList from "../src/buildList.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf8'));
+const schema = JSON.parse(readFileSync(join(__dirname, '../node_modules/@starkdefi/token-lists/dist/tokenlist.schema.json'), 'utf8'));
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);

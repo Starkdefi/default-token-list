@@ -1,6 +1,13 @@
-import packageJson from "../package.json" assert { type: "json" };
-import mainnet from "./tokens/mainnet.json" assert { type: "json" };
-import sepolia from "./tokens/sepolia.json" assert { type: "json" };
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf8'));
+const mainnet = JSON.parse(readFileSync(join(__dirname, './tokens/mainnet.json'), 'utf8'));
+const sepolia = JSON.parse(readFileSync(join(__dirname, './tokens/sepolia.json'), 'utf8'));
 
 export default function buildList() {
   const { version } = packageJson;
